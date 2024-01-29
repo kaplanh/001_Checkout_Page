@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 
 //*-----capturing vs. bubbling------
 //! tüm elementlere ulasabilecegim en yakin parenti secmeliyiz fazladan kaynak tüketmemek icin
-// !en huzlisi getElementById ikinci hizli querySelector dür
+// !en hizlisi getElementById ikinci hizli querySelector dür
 let productsDiv = document.querySelector(".products");//console.log() icine yazmadan da document.querySelector('.products') bu ifadeyi console tasiyip yakalayip yakalayamadigimizi kontrol edebiliriz
 productsDiv.addEventListener("click", (e) => {
     //!console.log(event.target); event.target evente maruz kalan elementi temsil eder
