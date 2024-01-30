@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
   //add after func. coding
   calculateCartTotal();
 });
-
+// ---
 //*-----capturing vs. bubbling------
 //! tüm elementlere ulasabilecegim en yakin parenti secmeliyiz fazladan kaynak tüketmemek icin
 // !en hizlisi getElementById ikinci hizli querySelector dür
