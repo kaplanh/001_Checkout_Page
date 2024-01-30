@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/checkout.css" />
+        <link rel="stylesheet" href="css/universal.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://kit.fontawesome.com/5c7edfd842.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <title>Checkout</title>
+    </head>
+
+    <body>
+        <main class="mb-1">
+            <h1 id="checkout-title">Checkout</h1>
+            <section>
+                <div id="products-preview">
+                    <div id="product-painel">
+                        <div class="products row row-cols-1 row-cols-sm-2 row-cols-lg-3 m-5">
+                           
+                                <div class="product col">
+                                    <img src="img/photo1.png" alt="" />
+                                    <div class="product-info">
+                                        <h2>Vintage Backbag</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>25.98</strong>
+                                                <span class="line-through"
+                                                    >34.99</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            25.98
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product col">
+                                    <img src="img/photo2.png" alt="" />
+                                    <div class="product-info">
+                                        <h2>Levi Shoes</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>45.99</strong>
+                                                <span class="line-through"
+                                                    >54.99</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            45.99
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product col">
+                                    <img src="img/photo3.jpg" alt="" />
+                                    <div class="product-info">
+                                        <h2>Antique Clock</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>74.99</strong>
+                                                <span class="line-through"
+                                                    >94.99</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            74.99
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="product col">
+                                    <img src="./img/hut.jpg" alt="" />
+                                    <div class="product-info">
+                                        <h2>Gustav Müller</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>15.99</strong>
+                                                <span class="line-through"
+                                                    >20.99</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            15.99
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product col">
+                                    <img src="./img/ArmBandUhr.jpg" alt="" />
+                                    <div class="product-info">
+                                        <h2>Emporio Armani</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>187.49</strong>
+                                                <span class="line-through"
+                                                    >339.00</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            45.99
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product col">
+                                    <img src="./img/Geldbeutel.jpg" alt="" />
+                                    <div class="product-info">
+                                        <h2>Cronus & Rhea - Geldbörse</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>99.90</strong>
+                                                <span class="line-through"
+                                                    >105.90</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            99.90
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="product col">
+                                    <img src="./img/socken.jpg" alt="" />
+                                    <div class="product-info">
+                                        <h2>Incylence</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>16.00</strong>
+                                                <span class="line-through"
+                                                    >20.00</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            16.00
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product col">
+                                    <img src="./img/Gürtel.jpg" alt="" />
+                                    <div class="product-info">
+                                        <h2>Cartvelli</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>34.95</strong>
+                                                <span class="line-through"
+                                                    >45.99</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            34.95
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product col">
+                                    <img src="./img/sonnenbrille.jpg" alt="" />
+                                    <div class="product-info">
+                                        <h2>Carrera</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>70.99</strong>
+                                                <span class="line-through"
+                                                    >142.99</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            70.99
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="product col">
+                                    <img src="./img/image-product-4.jpg" alt="" />
+                                    <div class="product-info">
+                                        <h2>Sneaker</h2>
+                                        <div class="product-price">
+                                            <p>
+                                                <strong>120.99</strong>
+                                                <span class="line-through"
+                                                    >142.99</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="quantity-controller">
+                                            <span class="minus">-</span>
+                                            <p id="product-quantity">1</p>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product-removal">
+                                            <button class="remove-product">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="product-line-price">
+                                            120.99
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                        </div>
+                        <div class="buy-detail" id="cart-subtotal">
+                            <p>Subtotal</p>
+                            <p>0</p>
+                        </div>
+                        <div class="buy-detail" id="cart-tax">
+                            <p>Tax(%18)</p>
+                            <p>0</p>
+                        </div>
+                        <div class="buy-detail" id="cart-shipping">
+                            <p>Shipping</p>
+                            <p>0</p>
+                        </div>
+                        <div class="buy-detail" id="cart-total">
+                            <p>Total</p>
+                            <p>0</p>
+                        </div>
+                        <div class="text-center mx-auto " id="cart-total">
+                            <a href="./index.html"><button class="continue">Home</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <script src="checkout.js"></script>
+    </body>
+</html>
