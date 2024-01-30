@@ -2,7 +2,7 @@
 # Checkout_Page
 
 
-![Checkout App](https://github.com/kaplanh/Checkout-App/assets/101884444/24150563-b9e7-4854-a0d6-ac1c87db85a8)
+![checkoutpage](https://github.com/kaplanh/Checkout_Page/assets/101884444/5cfce62d-d646-4ca7-8f0c-d7a58be1d7b3)
 
 
 [Click Me!](https://kaplanh.github.io/Checkout_Page/)
