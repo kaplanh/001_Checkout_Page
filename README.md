@@ -13,35 +13,33 @@ The project aims to create a Checkout App using JS and Bootstrap.
 
 ## Problem Statement
 
-- Your company has recently started on a project that aims to create a Checkout App. So you and your colleagues have started to work on the project.
+- Your company has recently started on a project that aims to create a Checkout Page. So you and your colleagues have started to work on the project.
 
 ## Project Skeleton 
 
 ```
-Checkout App (folder)
+Checkout Page (folder)
 |
 |----readme.md                        
 |----index.html
-|----style.css
-|----app.js
+|----checkout.js
 |----img (folder)
+|----css (folder)
+     |----index.css
+     |----checkout.css
+     |----universal.css
+
 ``` 
 
 
 ### At the end of the project, the following topics are to be covered;
 
 - HTML
-  - font-awesome 
+  - select
+  - strong
+  - del
    ```
-     <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-   
-   ```
+
  
 -CSS
  - Nested CSS
@@ -64,14 +62,7 @@ Checkout App (folder)
 }
    
    ```
-- @media query
 
- ```
-@media only screen and (max-width: 1150px) {
-    .nav__list {
-        padding: 0rem 1rem;
-    }
-  ```
   
   
 - JS
@@ -110,12 +101,9 @@ Checkout App (folder)
   - Array Methods
   - forEach() & reducer()
      ```
-     forEach() ==> array, nodeList te calisir
-    let subtotal = 0;
-    productPriceDivs.forEach((price) => {
-        subtotal += parseFloat(price.innerText);
+    productTotalPriceDivs.forEach(eachProductTotalPriceDiv => {
+        subtotal += parseFloat(eachProductTotalPriceDiv.innerText)
     });
-    console.log(subtotal);
     ```
  
       ```
@@ -137,11 +125,7 @@ Checkout App (folder)
   - if else - if - else  conditions
   - Ternary
     ```
-     subTotal 3000 den büyükse shippingPrice 0 olmasi icin
-      const shippingPrice =
-          subtotal > 0 && subtotal < localStorage.getItem("freeShippingPrice")
-              ? parseFloat(localStorage.getItem("shippingPrice"))
-              : 0; //localStorage den gelen veriler string olarak gelir
+    let shipping = (subtotal > 0 ? parseFloat(localStorage.getItem("shippingPrice")) : 0);
 
     ```
  
@@ -150,7 +134,7 @@ Checkout App (folder)
 
   - String Methods( toFixed() )
    ```
-   <td>${(taksit * vade.value).toFixed(2)} ₺</td>
+   productTotalPriceDiv.innerText = (productQuantity * productPrice).toFixed(2);
   ```
 
     
