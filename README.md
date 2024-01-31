@@ -40,8 +40,7 @@ Checkout Page (folder)
   - del
    ```
 
- 
--CSS
+ - CSS
  - Nested CSS
  - text-decoration: line-through
  ```
@@ -88,8 +87,7 @@ Checkout Page (folder)
   - Capturing & Bubbling
   - DOM Traversing
     - nextElementSibling
-    - nextElementSibling
-    - e.target.closest(".main__product-info")
+    - e.target.closest(".main__product-info"
     - if (e.target.classList.contains("fa-plus"))
     - e.target.previousElementSibling.innerText++;
     - firstElementChild
