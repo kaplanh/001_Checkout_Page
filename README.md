@@ -97,7 +97,7 @@ Checkout Page (folder)
  
   
   - Array Methods
-  - forEach() & reducer()
+  - forEach() & reduce()
      ```
     productTotalPriceDivs.forEach(eachProductTotalPriceDiv => {
         subtotal += parseFloat(eachProductTotalPriceDiv.innerText)
